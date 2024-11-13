@@ -35,15 +35,15 @@ public class BallCode : MonoBehaviour
     {
         if (collision.gameObject.layer == 3)
         {
-            plr1score++;
-            Score1.GetComponent<Text>().text = plr1score.ToString();
+            plr2score++;
+            Score2.GetComponent<Text>().text = plr2score.ToString();
             ResetBall();
         }
 
         if (collision.gameObject.layer == 6)
         {
-            plr2score++;
-            Score2.GetComponent<Text>().text = plr2score.ToString();
+            plr1score++;
+            Score1.GetComponent<Text>().text = plr1score.ToString();
             ResetBall();
         }
     }
